@@ -1,10 +1,10 @@
-import { booleanConverter, CSSType, TextBase, WhiteSpace, whiteSpaceProperty } from "tns-core-modules/ui/text-base";
+import { booleanConverter, CSSType, TextBase, WhiteSpace, whiteSpaceProperty } from "@nativescript/core/ui/text-base";
 import { EmojiLabel as EmojiLabelDefinition } from ".";
 import { EmojiPicker as EmojiPickerDefinition } from ".";
 import { EmojiLabelBase, EmojiPickerBase, textProperty } from "./emoji-picker.common";
-export * from "tns-core-modules/ui/text-base";
-export * from "tns-core-modules/ui/text-field/text-field-common";
-import { keyboardTypeProperty } from "tns-core-modules/ui/text-field/text-field-common";
+export * from "@nativescript/core/ui/text-base";
+export * from "@nativescript/core/ui/text-field/text-field-common";
+import { keyboardTypeProperty } from "@nativescript/core/ui/text-field/text-field-common";
 
 declare const com: any;
 
