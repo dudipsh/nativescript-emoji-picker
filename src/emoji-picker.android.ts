@@ -1,9 +1,9 @@
-import { booleanConverter, CSSType, TextBase, WhiteSpace, whiteSpaceProperty } from "@nativescript/core/ui/text-base";
+import { booleanConverter, CSSType, WhiteSpace, whiteSpaceProperty } from "@nativescript/core/ui/text-base";
 import { EmojiLabel as EmojiLabelDefinition } from ".";
 import { EmojiPicker as EmojiPickerDefinition } from ".";
 import { EmojiLabelBase, EmojiPickerBase, textProperty } from "./emoji-picker.common";
 export * from "@nativescript/core/ui/text-base";
-export * from "@nativescript/core/ui/text-field/text-field-common";
+export * from "@nativescript/core/ui/text-field";
 import { keyboardTypeProperty } from "@nativescript/core/ui/text-field/text-field-common";
 
 declare const com: any;

@@ -1,5 +1,4 @@
-import { EventData } from "@nativescript/core/data/observable";
-import { NavigatedData, Page } from "@nativescript/core/ui/page";
+import { EventData, NavigatedData, Page } from "@nativescript/core";
 import { HomeViewModel } from "./home-view-model";
 
 export function pageLoaded(args: EventData) {

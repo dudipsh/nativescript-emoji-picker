@@ -1,19 +1,18 @@
-import { Observable } from "@nativescript/core/data/observable";
-
-const  frame = require("ui/frame");
+import { Frame, Observable } from "@nativescript/core";
+import { EmojiLabel, EmojiPicker } from "../../../src/emoji-picker";
 
 export class HomeViewModel extends Observable {
     constructor() {
         super();
     }
     public onButtonTap(args): void {
-        const page = frame.topmost().currentPage;
-        page.getViewById("myEmojiPicker").togglePopup();
+        const page = Frame.topmost().currentPage;
+        (page.getViewById("myEmojiPicker") as EmojiPicker).togglePopup();
     }
 
     public onCopyBtnTap(args): void {
-        const page = frame.topmost().currentPage;
-        page.getViewById("myEmojiLabel").text = page.getViewById("myEmojiPicker").text;
+        const page = Frame.topmost().currentPage;
+        (page.getViewById("myEmojiLabel") as EmojiLabel).text = (page.getViewById("myEmojiPicker") as EmojiPicker).text;
         return;
     }
 }

@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
-import { EmojiPicker, EmojiLabel } from "nativescript-emoji-picker";
+import { Component, ViewChild } from "@angular/core";
+import { EmojiLabel, EmojiPicker } from "nativescript-emoji-picker";
 
 @Component({
     moduleId: module.id,
@@ -10,7 +10,6 @@ import { EmojiPicker, EmojiLabel } from "nativescript-emoji-picker";
 export class HomeComponent {
     @ViewChild("myEmojiPicker", { static: false }) public myEmojiPicker: EmojiPicker;
     @ViewChild("myEmojiLabel", { static: true }) public myEmojiLabel: EmojiLabel;
-
 
     public onButtonTap(): void {
         this.myEmojiPicker.nativeElement.togglePopup();

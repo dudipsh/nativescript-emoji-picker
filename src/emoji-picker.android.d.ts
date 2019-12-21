@@ -2,7 +2,7 @@ import { EmojiLabel as EmojiLabelDefinition } from ".";
 import { EmojiPicker as EmojiPickerDefinition } from ".";
 import { EmojiLabelBase, EmojiPickerBase } from "./emoji-picker.common";
 export * from "@nativescript/core/ui/text-base";
-export * from "@nativescript/core/ui/text-field/text-field-common";
+export * from "@nativescript/core/ui/text-field";
 declare const com: any;
 export declare class EmojiPicker extends EmojiPickerBase implements EmojiPickerDefinition {
     nativeView: any;
